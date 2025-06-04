@@ -13,6 +13,7 @@ Utilities Classes
 .container {
   width: 100%;
   max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
   display: flex;
 }
@@ -36,12 +37,27 @@ Utilities Classes
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
-  height: 110vh;
   width: 100vw;
 }
 
 button {
   margin: 0 auto !important;
+}
+
+.arrow-scale-animation {
+  animation: arrowScaleAnimation 1s ease-in-out infinite;
+}
+
+@keyframes arrowScaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .slick-next,
@@ -65,8 +81,13 @@ button {
 .slick-dots li button:before {
   font-size: 15px !important;
 }
+@media (min-width: 1441px) {
+  .linear_gradient {
+    height: 110vh;
+  }
+}
 
-@media (min-width: 1281px) and (max-width: 1528px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
   .linear_gradient {
     height: 125vh;
   }

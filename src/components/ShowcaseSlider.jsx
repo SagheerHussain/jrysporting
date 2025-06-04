@@ -14,6 +14,8 @@ const ShowcaseSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
   return (
     <div className="slider-container z-[-1]">
@@ -33,20 +35,20 @@ const ShowcaseSlider = () => {
                 whole are in the same boat!
               </p>
               <div className="header_call_to_action mt-6 flex items-center">
-                <div className="call_to_action_btn">
+                <div className="call_to_action_btn flex">
                   <a
                     href={`https://google.com`}
                     target="_blank"
-                    className="btn-primary inline-block"
+                    className="btn-primary inline-block text-[.8rem]"
                   >
-                    Book Now
+                    Explore More
                   </a>
                   <a
                     href={`https://google.com`}
                     target="_blank"
-                    className="btn-secondary inline-block translate-x-[10px] "
+                    className="btn-secondary inline-block translate-x-[10px] text-[.8rem]"
                   >
-                    Book Now
+                    Get In Touch
                   </a>
                 </div>
                 <div className="satisfied_clients flex ms-10">
@@ -84,19 +86,19 @@ const ShowcaseSlider = () => {
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img2.png"
                   alt=""
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img3.png"
                   alt=""
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
               </div>
             </div>
             <div className="header_side_image w-[45%] relative">
-              <div className="arrow absolute top-0 left-0">
+              <div className="arrow absolute top-0 left-0 arrow-scale-animation">
                 <svg
                   width="200"
                   height="200"
@@ -130,10 +132,11 @@ const ShowcaseSlider = () => {
           <div className="container flex justify-between">
             <div className="header_content w-[50%] z-[1]">
               <h1 className="text-primary_text leading-[1.2] z-[-1] font-extrabold text-[2.5rem]">
-                The Perfect Venue for Events &{" "}
+                Experience{" "}
                 <span className="bg-primary_bg px-4 py-1 rounded-tl-[15px] rounded-br-[15px]">
-                  Team Building
-                </span>
+                  Family-Friendly
+                </span>{" "}
+                Clay Shooting Like Never Before
               </h1>
               <p className="text-primary_text mt-6 font-medium">
                 How about we assist with peopling consider foods grown from the
@@ -145,16 +148,16 @@ const ShowcaseSlider = () => {
                   <a
                     href={`https://google.com`}
                     target="_blank"
-                    className="btn-primary inline-block"
+                    className="btn-primary inline-block text-[.8rem]"
                   >
-                    Book Now
+                    Explore More
                   </a>
                   <a
                     href={`https://google.com`}
                     target="_blank"
-                    className="btn-secondary inline-block translate-x-[10px] "
+                    className="btn-secondary inline-block translate-x-[10px] text-[.8rem]"
                   >
-                    Book Now
+                    Get In Touch
                   </a>
                 </div>
                 <div className="satisfied_clients flex ms-10">
@@ -192,19 +195,19 @@ const ShowcaseSlider = () => {
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img2.png"
                   alt=""
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img3.png"
                   alt=""
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
               </div>
             </div>
             <div className="header_side_image w-[45%] relative">
-              <div className="arrow absolute top-0 left-0">
+              <div className="arrow absolute top-0 left-0 arrow-scale-animation">
                 <svg
                   width="200"
                   height="200"
@@ -237,10 +240,10 @@ const ShowcaseSlider = () => {
         <div className="w-screen">
           <div className="container flex justify-between">
             <div className="header_content w-[50%] z-[1]">
-              <h1 className="text-primary_text leading-[1.2] z-[-1] font-extrabold text-[2.5rem]">
-                The Perfect Venue for Events &{" "}
+              <h1 className="text-primary_text leading-[1.3] z-[-1] font-extrabold text-[2.5rem]">
+                Challenge Yourself Across 20 Scenic{" "}
                 <span className="bg-primary_bg px-4 py-1 rounded-tl-[15px] rounded-br-[15px]">
-                  Team Building
+                  Shooting Stations
                 </span>
               </h1>
               <p className="text-primary_text mt-6 font-medium">
@@ -253,16 +256,16 @@ const ShowcaseSlider = () => {
                   <a
                     href={`https://google.com`}
                     target="_blank"
-                    className="btn-primary inline-block"
+                    className="btn-primary inline-block text-[.8rem]"
                   >
-                    Book Now
+                    Explore More
                   </a>
                   <a
                     href={`https://google.com`}
                     target="_blank"
-                    className="btn-secondary inline-block translate-x-[10px] "
+                    className="btn-secondary inline-block translate-x-[10px] text-[.8rem]"
                   >
-                    Book Now
+                    Get In Touch
                   </a>
                 </div>
                 <div className="satisfied_clients flex ms-10">
@@ -271,7 +274,7 @@ const ShowcaseSlider = () => {
                       img: "https://www.webstrot.com/html/weapon/light_version/assets/images/home3/run_slider_box-img1.png",
                     },
                     {
-                      img: "https://www.webstrot.com/html/weapon/light_version/assets/images/home3/run_slider_box-img2.png",
+                      img: "https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img2.png",
                     },
                     {
                       img: "https://www.webstrot.com/html/weapon/light_version/assets/images/home3/run_slider_box-img3.png",
@@ -300,19 +303,19 @@ const ShowcaseSlider = () => {
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img2.png"
                   alt=""
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img3.png"
                   alt=""
                   className="max-w-[150px] object-contain rounded-[15px]"
                 />
               </div>
             </div>
             <div className="header_side_image w-[45%] relative">
-              <div className="arrow absolute top-0 left-0">
+              <div className="arrow absolute top-0 left-0 arrow-scale-animation">
                 <svg
                   width="200"
                   height="200"
