@@ -38,6 +38,7 @@ Utilities Classes
   background-position: center;
   background-repeat: no-repeat; 
   width: 100vw;
+  height: 100vh;
 }
 
 button {
@@ -81,9 +82,9 @@ button {
 .slick-dots li button:before {
   font-size: 15px !important;
 }
-@media (min-width: 1441px) {
+/* @media (min-width: 1441px) {
   .linear_gradient {
-    height: 110vh;
+    height: 100vh;
   }
 }
 
@@ -98,4 +99,4 @@ button {
     height: 130vh;
   }
 }
-  
+   */

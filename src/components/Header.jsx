@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <header id="header" className="linear_gradient">
         <Navbar />
-        <div className="pt-[50px]">
+        <div className="pt-[30px]">
           <ShowcaseSlider />
         </div>
       </header>

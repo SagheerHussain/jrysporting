@@ -23,16 +23,15 @@ const ShowcaseSlider = () => {
         <div className="w-screen">
           <div className="container flex justify-between">
             <div className="header_content w-[50%] z-[1]">
-              <h1 className="text-primary_text leading-[1.2] z-[-1] font-extrabold text-[2.5rem]">
-                The Perfect Venue for Events &{" "}
+              <h1 className="text-primary_text leading-[1.3] z-[-1] font-extrabold text-[2.5rem]">
+                Explore Our State-of-the-Art{" "}
                 <span className="bg-primary_bg px-4 py-1 rounded-tl-[15px] rounded-br-[15px]">
-                  Team Building
+                  Clay Courses
                 </span>
               </h1>
               <p className="text-primary_text mt-6 font-medium">
-                How about we assist with peopling consider foods grown from the
-                ground to be necessary to our wellbeing, satisfaction We as a
-                whole are in the same boat!
+                Enjoy multiple clay shooting stations designed for challenges,
+                scenic beauty, and safety-focused fun.
               </p>
               <div className="header_call_to_action mt-6 flex items-center">
                 <div className="call_to_action_btn flex">
@@ -131,17 +130,15 @@ const ShowcaseSlider = () => {
         <div className="w-screen">
           <div className="container flex justify-between">
             <div className="header_content w-[50%] z-[1]">
-              <h1 className="text-primary_text leading-[1.2] z-[-1] font-extrabold text-[2.5rem]">
-                Experience{" "}
+              <h1 className="text-primary_text leading-[1.3] z-[-1] font-extrabold text-[2.5rem]">
+                Corporate and Group Shooting{" "}
                 <span className="bg-primary_bg px-4 py-1 rounded-tl-[15px] rounded-br-[15px]">
-                  Family-Friendly
-                </span>{" "}
-                Clay Shooting Like Never Before
+                  Event Packages
+                </span>
               </h1>
               <p className="text-primary_text mt-6 font-medium">
-                How about we assist with peopling consider foods grown from the
-                ground to be necessary to our wellbeing, satisfaction We as a
-                whole are in the same boat!
+                Plan exciting group outings with tailored packages for
+                corporate, friends, and family shooting events.
               </p>
               <div className="header_call_to_action mt-6 flex items-center">
                 <div className="call_to_action_btn">
@@ -241,15 +238,14 @@ const ShowcaseSlider = () => {
           <div className="container flex justify-between">
             <div className="header_content w-[50%] z-[1]">
               <h1 className="text-primary_text leading-[1.3] z-[-1] font-extrabold text-[2.5rem]">
-                Challenge Yourself Across 20 Scenic{" "}
+                Experience Texas’ Premier Sporting{" "}
                 <span className="bg-primary_bg px-4 py-1 rounded-tl-[15px] rounded-br-[15px]">
-                  Shooting Stations
+                  Clay Range
                 </span>
               </h1>
               <p className="text-primary_text mt-6 font-medium">
-                How about we assist with peopling consider foods grown from the
-                ground to be necessary to our wellbeing, satisfaction We as a
-                whole are in the same boat!
+                Coyote Clays offers thrilling shooting experiences in a scenic,
+                well-maintained, and professional outdoor setting.
               </p>
               <div className="header_call_to_action mt-6 flex items-center">
                 <div className="call_to_action_btn">
