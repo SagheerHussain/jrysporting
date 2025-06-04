@@ -80,19 +80,19 @@ const ShowcaseSlider = () => {
               </div>
               <div className="shooters_gallery flex items-center gap-5 mt-10">
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://lirp.cdn-website.com/454c6b31/dms3rep/multi/opt/seeland-mens-winster-softshell-jacket-lifestyle-400x482-1920w.jpg"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img2.png"
+                  src="https://lirp.cdn-website.com/454c6b31/dms3rep/multi/opt/Best-Shooting-Vest-1920w.png"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img3.png"
+                  src="https://lirp.cdn-website.com/454c6b31/dms3rep/multi/opt/f6bf7f680b7c4ab5dcb7ea01601d0f69--shooting-sports-skeet-shooting-1920w.jpg"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
               </div>
             </div>
@@ -189,17 +189,17 @@ const ShowcaseSlider = () => {
                 <img
                   src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
                 <img
                   src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img2.png"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
                 <img
                   src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img3.png"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
               </div>
             </div>
@@ -294,19 +294,19 @@ const ShowcaseSlider = () => {
               </div>
               <div className="shooters_gallery flex items-center gap-5 mt-10">
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img1.png"
+                  src="https://lirp.cdn-website.com/454c6b31/dms3rep/multi/opt/Screen+Shot+2019-08-07+at+6.38.25+PM-ddbfe5a4-1920w.png"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img2.png"
+                  src="https://lirp.cdn-website.com/454c6b31/dms3rep/multi/opt/Screen+Shot+2019-08-07+at+6.38.32+PM-b376d84c-1920w.png"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
                 <img
-                  src="https://www.webstrot.com/html/weapon/light_version/assets/images/home3/gun-carbine-img3.png"
+                  src="https://lirp.cdn-website.com/454c6b31/dms3rep/multi/opt/Tenzing-Soft-Case-1920w.jpg"
                   alt=""
-                  className="max-w-[150px] object-contain rounded-[15px]"
+                  className="w-[150px] h-[150px] object-cover rounded-[15px]"
                 />
               </div>
             </div>

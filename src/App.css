@@ -23,12 +23,24 @@ Utilities Classes
   color: #fff;
   padding: 10px 30px;
   border-radius: 20px 0 20px 0;
+  border: 2px solid #5c4f36;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background: transparent;
+  border: 2px solid #5c4f36;
+  color: #383021;
 }
 .btn-secondary {
-  border: 2px solid #222;
-  color: #000;
+  border: 2px solid #5c4f36;
+  color: #383020;
   padding: 10px 30px;
   border-radius: 20px 0 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+.btn-secondary:hover {
+  background: #5c4f36;
+  color: #fff;
 }
 
 .linear_gradient {
