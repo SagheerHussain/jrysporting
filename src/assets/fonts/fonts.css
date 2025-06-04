@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "SF Fedora";
+  src: url("./SF_Fedora.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF_Fedora_Titles";
+  src: url("./SF_Fedora_Titles.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}

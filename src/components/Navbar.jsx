@@ -5,7 +5,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 const Navbar = () => {
   return (
     <>
-      <nav id="navbar" className="navbar py-4 ">
+      <nav id="navbar" className="navbar py-4 h-[20vh]">
         <div className="container items-center">
           <div className="logo">
             <Logo className="max-w-[120px] w-full" />
@@ -83,13 +83,13 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar_call_to_action ms-auto flex items-center">
-            <div className="contact_info flex flex-col items-center me-6">
+            {/* <div className="contact_info flex flex-col items-center me-6">
               <h1 className="font-semibold">More Information Call</h1>
               <span className="text-primary text-[20px] uppercase font-semibold transition-all duration-300 ease-in-out">
-                <a href="">408 778 3600</a>
+                <a href="tel:4087783600">408 778 3600</a>
               </span>
-            </div>
-            <button className="btn-primary">Book Now</button>
+            </div> */}
+            <button className="btn-secondary">Book Now</button>
           </div>
         </div>
       </nav>
