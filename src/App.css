@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap");
+
+body {
+  font-family: "Asta Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/*
+####################################
+Utilities Classes
+####################################
+*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.btn-primary {
+  background: #5c4f36;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px 0 20px 0;
+}
+.btn-secondary {
+  border: 2px solid #222;
+  color: #000;
+  padding: 10px 30px;
+  border-radius: 20px 0 20px 0;
+}
+
+.linear_gradient {
+  /* background: linear-gradient(to right, #f4f4f4, #a3a777); */
+  background: url("/Images/texture.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 110vh;
+  width: 100vw;
+}
+
+button {
+  margin: 0 auto !important;
+}
+
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
+.slick-dots {
+  position: absolute !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  top: 40% !important;
+  right: 2% !important;
+  width: auto !important;
+  height: 80px !important;
+  transform: translate(0%, -100%) !important;
+}
+.slick-dots li {
+  margin: 0 1px !important;
+}
+.slick-dots li button:before {
+  font-size: 15px !important;
+}
+
+@media (min-width: 1281px) and (max-width: 1528px) {
+  .linear_gradient {
+    height: 125vh;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .linear_gradient {
+    height: 130vh;
+  }
+}
+  
