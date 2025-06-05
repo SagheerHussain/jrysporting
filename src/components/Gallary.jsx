@@ -35,22 +35,23 @@ const Gallery = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[180px]">
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className={`overflow-hidden rounded-lg cursor-pointer ${img.size}`}
-            onClick={() => handleClick(index)}
-          >
-            <img
-              src={img.src}
-              alt={`img-${index}`}
-              className="w-full h-full object-cover hover:scale-105 transition duration-300 ease-in-out"
-            />
-          </div>
-        ))}
+      <div className="container">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[180px]">
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className={`overflow-hidden rounded-lg cursor-pointer ${img.size}`}
+              onClick={() => handleClick(index)}
+            >
+              <img
+                src={img.src}
+                alt={`img-${index}`}
+                className="w-full h-full object-cover hover:scale-105 transition duration-300 ease-in-out"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-
       <FsLightbox
         toggler={toggler}
         sources={images.map((img) => img.src)}
