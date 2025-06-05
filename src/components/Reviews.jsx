@@ -31,7 +31,7 @@ const Reviews = () => {
             </div>
           </div>
         </div>
-        <div className="testimonial_moving_card mt-8 [mask-image:linear-gradient(to_right,transparent,black_15%,black_95%,transparent)]">
+        <div className="testimonial_moving_card mt-8 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <InfiniteMovingCards
             bgColor=""
             pauseOnHover={false}
@@ -41,7 +41,7 @@ const Reviews = () => {
           />
         </div>
         <br />
-        <div className="testimonial_moving_card [mask-image:linear-gradient(to_right,transparent,black_25%,black_75%,transparent)]">
+        <div className="testimonial_moving_card [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <InfiniteMovingCards
             bgColor=""
             direction={"right"}
