@@ -4,6 +4,9 @@ import Slider from "react-slick";
 import bannerOne from "/Images/Hero Section Banner/45.webp";
 import bannerTwo from "/Images/Hero Section Banner/46.webp";
 import bannerThree from "/Images/Hero Section Banner/47.webp";
+import bannerFour from "/Images/Hero Section Banner/48.webp";
+import bannerFive from "/Images/Hero Section Banner/49.webp";
+import bannerSix from "/Images/Hero Section Banner/50.webp";
 
 const Showcase = () => {
   const settings = {
@@ -15,105 +18,107 @@ const Showcase = () => {
     slidesToScroll: 1,
     waitForAnimate: false,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     arrows: false,
     pauseOnHover: false,
   };
 
+  const slides = [
+    {
+      image: bannerOne,
+      title: "Everything you need with",
+      highlight: "ProShop",
+      description:
+        "Our ProShop offers a wide range of shotguns, ammunition, and accessories. Whether you're a novice or seasoned shooter, we have the gear to suit your needs.",
+    },
+    {
+      image: bannerTwo,
+      title: "Challenging courses for all",
+      highlight: "skill levels",
+      description:
+        "Experience diverse shooting disciplines including Sporting Clays, Skeet, and Trap. Our courses cater to both beginners and experienced shooters.",
+    },
+    {
+      image: bannerThree,
+      title: "Spend the day and have",
+      highlight: "fun with friends",
+      description:
+        "Enjoy group events in our scenic picnic areas shaded by giant oaks. Perfect for gatherings, parties, or corporate events.",
+    },
+    {
+      image: bannerFour,
+      title: "Safe and",
+      highlight: "secure environment",
+      description:
+        "Safety is our top priority with strict firearm handling rules enforced. Our knowledgeable staff ensures a secure and enjoyable experience.",
+    },
+    {
+      image: bannerFive,
+      title: "Develop your",
+      highlight: "skills",
+      description:
+        "Enhance your shooting abilities with our private instruction sessions. Our certified instructors tailor lessons to your experience level.",
+    },
+    {
+      image: bannerSix,
+      title: "Beautiful rolling hills of",
+      highlight: "Central California",
+      description:
+        "Set in the picturesque Santa Clara Valley, our facility offers breathtaking views. Enjoy the natural beauty while engaging in your favorite shooting activities.",
+    },
+  ];
+
   return (
     <section id="showcase">
-      {/* <div className="showcase-content">
-          <div
-            className="showcase-content-effect"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-offset="0"
-          ></div>
-          <h6>Premier Clay Shooting Experience</h6>
-          <h1 className="text-[48px] leading-[1.1]">
-            Master Clay {""} <br />
-            <span>Shooting Skills</span>
-          </h1>
-          <p
-            className="text-[16px] max-w-[35rem]"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-offset="0"
-          >
-            Experience the thrill of clay target shooting amidst the scenic
-            beauty of Santa Clara Valley. Our facility offers diverse courses
-            suitable for all skill levels, ensuring a memorable outing for
-            everyone.
-          </p>
-          <a
-            href="about.html"
-            className="btn-main"
-            data-aos="fade-up"
-            data-aos-duration="2200"
-            data-aos-offset="0"
-          >
-            Explore More
-          </a>
-        </div>
-        <div className="showcase-content-vertical-effect"></div> */}
-
-      <div className="relative w-full h-screen flex z-[2]">
-        {/* Left Side (Content + Overlay) */}
-        <div
-          className="w-full z-[0] bg-black flex items-center justify-start text-white p-10"
-          style={{
-            background: "url('/Images/texture.png'), #818062",
-            backgroundBlendMode: "multiply",
-            backgroundSize: "contain",
-            zIndex: 1,
-          }}
-        >
-          <div className="container flex-col pt-20">
-            <h6 className="text-white text-sm uppercase mb-3">
-              Premier Clay Shooting Experience
-            </h6>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-              Master Clay <br />
-              <span className="text-[#D56602]">Shooting Skills</span>
-            </h1>
-            <p className="text-sm md:text-base max-w-md mb-6">
-              Experience the thrill of clay target shooting amidst the scenic
-              beauty of Santa Clara Valley. Our facility offers diverse courses
-              suitable for all skill levels.
-            </p>
-            <div className="header_btn">
-              <a
-                href="#about"
-                className="btn-main bg-white px-[2rem] py-[1rem] text-black rounded hover:bg-gray-100 transition"
-              >
-                Explore More
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Side (Image) */}
-        <div className="absolute top-0 w-[60%] left-[40%] z-[1] h-full">
-          <Slider {...settings}>
-            {[bannerOne, bannerTwo, bannerThree].map((bg, i) => (
-              <div key={i}>
-                <div
-                  className="w-full h-[100vh]"
-                  style={{
-                    backgroundImage: `url(${bg})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    height: "100vh",
-                    width: "100%",
-                    clipPath: "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)",
-                  }}
-                ></div>
+      <Slider {...settings}>
+        {slides.map((slide, i) => (
+          <div key={i} className="w-full h-screen flex z-[2]">
+            {/* Left Content */}
+            <div
+              className="w-full bg-black flex items-center justify-start text-white p-10"
+              style={{
+                background: "url('/Images/texture.png'), #818062",
+                backgroundBlendMode: "multiply",
+                backgroundSize: "contain",
+                height: "100vh",
+              }}
+            >
+              <div className="container flex-col pt-20">
+                <h6 className="text-white text-sm uppercase mb-3">
+                  Premier Clay Shooting Experience
+                </h6>
+                <h1 className="text-4xl md:text-[2.7rem] font-extrabold leading-tight mb-4">
+                  {slide.title} <br />
+                  <span className="text-[#D56602]">{slide.highlight}</span>
+                </h1>
+                <p className="text-sm md:text-base max-w-md mb-6">
+                  {slide.description}
+                </p>
+                <div className="header_btn">
+                  <a
+                    href="#about"
+                    className="btn-main bg-white px-[2rem] py-[1rem] text-black rounded hover:bg-gray-100 transition"
+                  >
+                    Explore More
+                  </a>
+                </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
+            </div>
+
+            {/* Right Image */}
+            <div
+              className="absolute top-0 w-[50%] left-[50%] z-[1] h-full"
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                clipPath: "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)",
+              }}
+            ></div>
+          </div>
+        ))}
+      </Slider>
     </section>
   );
 };

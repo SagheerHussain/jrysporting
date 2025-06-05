@@ -18,11 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header id="header" className="relative h-screen w-full">
-      {/* Background slider */}
-      
-
-      {/* Foreground content */}
+    <header id="header" className="relative">
       <TestNavbar />
       <Showcase />
     </header>

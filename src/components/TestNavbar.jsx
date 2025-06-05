@@ -10,33 +10,11 @@ const Navbar = () => {
       <div className="container d-flex">
         <div className="logo">
           <a href="/" className="d-flex align-items-center">
-            <Logo className="max-w-[250px] p-3" alt="" />
+            <Logo className="max-w-[200px] p-3" alt="" />
           </a>
         </div>
         <div className="w-full">
-          <div className="top-menu h-[50%] d-flex align-items-center justify-content-between px-3">
-            <div className="social-links">
-              <a href="">
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-              <a href="https://www.facebook.com/AlMehdisolutions">
-                <i className="fa-brands fa-facebook"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/al-mehdi-solutions/mycompany/">
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-            <div className="call-to-action">
-              <p>
-                <IoMdCall className="text-[24px] bg-primary_bg rounded-full me-2 p-1" />{" "}
-                Make a call{" "}
-                <a href="tel:+14087783600" className="ps-2">
-                  408 778 3600
-                </a>
-              </p>
-            </div>
-          </div>
-          <div className="bottom-menu h-[50%] d-flex align-items-center justify-content-between ps-4">
+          <div className="bottom-menu h-[50%] d-flex align-items-center justify-content-between px-4 pt-2">
             <ul className="flex bottom-menu-unordered-list">
               {[
                 { label: "Home", slug: "#" },
@@ -122,9 +100,11 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="nav-manu">
-              <i className="fa-solid fa-bars" id="openAsideMenu"></i>
-            </div>
+
+            <p className=" flex items-center">
+              <IoMdCall className="inline bg-primary_bg p-1 text-[24px] me-2 text-white rounded-full" />
+              <a href="tel:408 778 3600" className="text-white text-[.7rem]">408 778 3600</a>
+            </p>
           </div>
         </div>
       </div>

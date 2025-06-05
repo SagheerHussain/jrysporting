@@ -4,7 +4,7 @@ import aboutImage from "/Images/about-info.png";
 const Info = () => {
   return (
     <>
-      <section id="about" className="py-10">
+      <section id="about" className="py-20">
         <div className="container flex items-center">
           <div className="info_image w-[45%]">
             <img src={aboutImage} className="max-w-full h-full" alt="" />

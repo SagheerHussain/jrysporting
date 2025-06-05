@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <Info />
-      {/* <Faq /> */}
+      <Faq />
     </>
   );
 }
