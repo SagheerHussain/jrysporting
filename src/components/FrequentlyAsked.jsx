@@ -3,10 +3,9 @@ import faqImageOne from "/Images/faq (1).webp";
 import faqImageTwo from "/Images/faq (2).webp";
 import faqImageThree from "/Images/faq (3).webp";
 
-const Faq = () => {
+const FrequentlyAsked = () => {
   return (
-    <>
-      <section id="faq" className="py-20">
+    <section id="faq" className="py-20">
         <div className="container gap-10">
 
 
@@ -91,8 +90,7 @@ const Faq = () => {
           </div>
         </div>
       </section>
-    </>
-  );
-};
+  )
+}
 
-export default Faq;
+export default FrequentlyAsked
