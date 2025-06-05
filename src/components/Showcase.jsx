@@ -57,10 +57,10 @@ const Showcase = () => {
         </div>
         <div className="showcase-content-vertical-effect"></div> */}
 
-      <div className="relative w-full h-screen flex">
+      <div className="relative w-full h-screen flex z-[2]">
         {/* Left Side (Content + Overlay) */}
         <div
-          className="w-1/2 bg-black flex items-center justify-center text-white p-10"
+          className="w-full z-[0] bg-black flex items-center justify-start text-white p-10"
           style={{
             background: "url('/Images/texture.png'), #818062",
             backgroundBlendMode: "multiply",
@@ -68,7 +68,7 @@ const Showcase = () => {
             zIndex: 1,
           }}
         >
-          <div className="pt-20">
+          <div className="container flex-col pt-20">
             <h6 className="text-white text-sm uppercase mb-3">
               Premier Clay Shooting Experience
             </h6>
@@ -81,22 +81,24 @@ const Showcase = () => {
               beauty of Santa Clara Valley. Our facility offers diverse courses
               suitable for all skill levels.
             </p>
-            <a
-              href="#about"
-              className="btn-main bg-white text-black px-6 py-2 rounded hover:bg-gray-100 transition"
-            >
-              Explore More
-            </a>
+            <div className="header_btn">
+              <a
+                href="#about"
+                className="btn-main bg-white px-[2rem] py-[1rem] text-black rounded hover:bg-gray-100 transition"
+              >
+                Explore More
+              </a>
+            </div>
           </div>
         </div>
 
         {/* Right Side (Image) */}
-        <div className="absolute top-0 left-[50%] w-1/2 h-full -z-10">
+        <div className="absolute top-0 w-[60%] left-[40%] z-[1] h-full">
           <Slider {...settings}>
             {[bannerOne, bannerTwo, bannerThree].map((bg, i) => (
               <div key={i}>
                 <div
-                  className="w-full h-[120vh]"
+                  className="w-full h-[100vh]"
                   style={{
                     backgroundImage: `url(${bg})`,
                     backgroundSize: "cover",
@@ -104,14 +106,13 @@ const Showcase = () => {
                     backgroundRepeat: "no-repeat",
                     height: "100vh",
                     width: "100%",
+                    clipPath: "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)",
                   }}
                 ></div>
               </div>
             ))}
           </Slider>
         </div>
-
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120px] h-full z-[999] bg-gradient-to-r from-[#818062]/0 via-[rgb(129,128,98,1)] to-transparent pointer-events-none"></div>
       </div>
     </section>
   );

@@ -1,10 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
 import TestNavbar from "./TestNavbar";
 import Showcase from "./Showcase";
-import bannerOne from "/Images/Hero Section Banner/45.webp";
-import bannerTwo from "/Images/Hero Section Banner/46.webp";
-import bannerThree from "/Images/Hero Section Banner/47.webp";
 
 const Header = () => {
   const settings = {
@@ -22,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header id="header" className="relative h-[120vh] w-full">
+    <header id="header" className="relative h-screen w-full">
       {/* Background slider */}
       
 

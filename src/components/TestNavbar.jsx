@@ -103,6 +103,10 @@ const Navbar = () => {
                         className="clip_box w-[10px] h-[10px] absolute top-[-8px] left-[5%] bg-primary_bg z-[-1]"
                         style={{
                           clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
+                          background: "url('/Images/texture.png'), #D56602",
+                          backgroundBlendMode: "multiply",
+                          backgroundSize: "contain",
+                          zIndex: 1,
                         }}
                       ></div>
                       {item.subMenu.map((subItem, subIndex) => (

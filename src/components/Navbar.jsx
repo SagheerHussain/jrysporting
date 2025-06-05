@@ -61,9 +61,9 @@ const Navbar = () => {
                     {item.subMenu && <MdKeyboardArrowDown className="inline" />}
                   </a>
                   {item.subMenu && (
-                    <ul className="z-[99999] sub-menu group-hover:opacity-100 group-hover:visible invisible group-hover:h-auto opacity-0 h-[0px] transition-all duration-300 ease-in-out absolute top-full group-hover:translate-y-[10px] translate-y-[20px] left-0 w-[200px] bg-secondary_bg">
+                    <ul className="z-[99999] sub-menu group-hover:opacity-100 group-hover:visible invisible group-hover:h-auto opacity-0 h-[0px] transition-all duration-300 ease-in-out absolute top-full group-hover:translate-y-[10px] translate-y-[20px] left-0 w-[200px] bg-primary_bg">
                       <div
-                        className="clip_box w-[10px] h-[10px] absolute top-[-8px] left-[5%] bg-secondary_bg z-[-1]"
+                        className="clip_box w-[10px] h-[10px] absolute top-[-8px] left-[5%] bg-primary_bg z-[-1]"
                         style={{
                           clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
                         }}
