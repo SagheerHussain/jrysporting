@@ -8,6 +8,8 @@ const Faq = () => {
     <>
       <section id="faq" className="py-20">
         <div className="container gap-10">
+
+
           <div className="faq-box gap-4">
             <div className="faq-box-image w-full">
               <img

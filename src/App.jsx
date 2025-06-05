@@ -5,6 +5,7 @@ import "./assets/fonts/fonts.css";
 import Header from "./components/Header";
 import Info from "./components/Info";
 import Faq from "./components/faq";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Info />
       <Faq />
+      <WhyChooseUs />
     </>
   );
 }
