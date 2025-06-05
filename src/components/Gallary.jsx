@@ -52,6 +52,13 @@ const Gallery = () => {
           ))}
         </div>
       </div>
+      <div className="container">
+        <div className="w-[100%] text-center mt-8">
+          <button className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8">
+            Explore All
+          </button>
+        </div>
+      </div>
       <FsLightbox
         toggler={toggler}
         sources={images.map((img) => img.src)}

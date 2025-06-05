@@ -8,6 +8,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import FrequentlyAsked from "./components/FrequentlyAsked";
 import Gallary from "./components/Gallary";
 import Footer from "./components/Footer";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <FrequentlyAsked />
       <WhyChooseUs />
       <Gallary />
+      <Reviews />
       <Footer />
     </>
   );
