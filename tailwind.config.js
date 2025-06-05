@@ -11,8 +11,8 @@ export default {
         primary_text_hover: "#f4f4f4",
         secondary_text: "#fff",
         secondary_text_hover: "#222",
-        primary_bg: "#A3A777",
-        secondary_bg: "#D56602",
+        primary_bg: "#D56602",
+        secondary_bg: "#818062",
         border_primary: "#ccc"
       },
     },
