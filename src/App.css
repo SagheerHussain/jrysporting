@@ -246,18 +246,23 @@ Navbar Styling Portion
 }
 
 #navbar .logo {
-  background-color: #111 !important;
+  background: url('/Images/texture.png'), #D56602;
+  background-blend-mode: multiply;
+  background-size: contain;
   border-top-left-radius: 15px !important;
   border-bottom-left-radius: 15px !important;
 }
 
 #navbar .logo img {
+  background-color: #fff;
   border-top-left-radius: 15px !important;
   border-bottom-left-radius: 15px !important;
 }
 
 #navbar .top-menu {
-  background-color: #111;
+  background: url('/Images/texture.png'), #D56602;
+  background-blend-mode: multiply;
+  background-size: contain;
   width: 100%;
   border-top-right-radius: 15px !important;
   /* height: 40%; */
@@ -297,12 +302,14 @@ Navbar Styling Portion
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222;
+  background: url('/Images/texture.png'), #9c5043;
+  background-blend-mode: multiply;
+  background-size: contain;
   border-bottom-right-radius: 15px !important;
 }
 
 #navbar .bottom-menu .nav-manu {
-  color: #666;
+  color: #fff;
   font-size: 1.5rem !important;
   /* margin: 0 1rem; */
   display: none;
@@ -319,7 +326,7 @@ Navbar Styling Portion
 }
 
 .bottom-menu .bottom-menu-unordered-list .menu-list-link {
-  color: #999;
+  color: #fff;
   text-decoration: none !important;
   margin-right: 2rem;
   text-transform: uppercase;

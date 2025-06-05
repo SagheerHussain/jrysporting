@@ -28,8 +28,11 @@ const Navbar = () => {
             </div>
             <div className="call-to-action">
               <p>
-                <IoMdCall className="text-[24px] bg-primary_bg rounded-full me-2 p-1" /> Make a call{" "}
-                <a href="tel:+14087783600" className="ps-2">408 778 3600</a>
+                <IoMdCall className="text-[24px] bg-primary_bg rounded-full me-2 p-1" />{" "}
+                Make a call{" "}
+                <a href="tel:+14087783600" className="ps-2">
+                  408 778 3600
+                </a>
               </p>
             </div>
           </div>
@@ -79,12 +82,23 @@ const Navbar = () => {
                     item.subMenu ? "relative" : ""
                   } uppercase font-semibold transition-all duration-300 ease-in-out group z-[9]`}
                 >
-                  <a href={item.slug} className="flex items-center menu-list-link">
+                  <a
+                    href={item.slug}
+                    className="flex items-center menu-list-link"
+                  >
                     {item.label}{" "}
                     {item.subMenu && <MdKeyboardArrowDown className="inline" />}
                   </a>
                   {item.subMenu && (
-                    <ul className="z-[99999] sub-menu group-hover:opacity-100 group-hover:visible invisible group-hover:h-auto opacity-0 h-[0px] transition-all duration-300 ease-in-out absolute top-full group-hover:translate-y-[10px] translate-y-[20px] left-0 w-[200px] bg-primary_bg">
+                    <ul
+                      className="z-[99999] sub-menu group-hover:opacity-100 group-hover:visible invisible group-hover:h-auto opacity-0 h-[0px] transition-all duration-300 ease-in-out absolute top-full group-hover:translate-y-[10px] translate-y-[20px] left-0 w-[200px] bg-primary_bg"
+                      style={{
+                        background: "url('/Images/texture.png'), #D56602",
+                        backgroundBlendMode: "multiply",
+                        backgroundSize: "contain",
+                        zIndex: 1,
+                      }}
+                    >
                       <div
                         className="clip_box w-[10px] h-[10px] absolute top-[-8px] left-[5%] bg-primary_bg z-[-1]"
                         style={{

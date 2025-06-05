@@ -24,18 +24,7 @@ const Header = () => {
   return (
     <header id="header" className="relative h-[120vh] w-full">
       {/* Background slider */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
-        <Slider {...settings}>
-          {[bannerOne, bannerTwo, bannerThree].map((bg, i) => (
-            <div key={i}>
-              <div
-                className="w-full h-[120vh]"
-                style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${bg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}
-              ></div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      
 
       {/* Foreground content */}
       <TestNavbar />
