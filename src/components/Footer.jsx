@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
-import Logo from "./Logo";
+import logo from "/Images/white-logo.png";
 
 const Footer = () => {
   const [toggler, setToggler] = useState(false);
@@ -20,7 +20,7 @@ const Footer = () => {
       id="footer"
       className="text-gray-800 py-10"
       style={{
-        background: "url('/Images/texture.png'), #818062",
+        background: "url('/Images/texture.png'), #9c5043",
         backgroundBlendMode: "multiply",
         backgroundSize: "contain",
       }}
@@ -28,8 +28,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
-          <div>
-            <Logo className="max-w-[200px]"></Logo>
+          <div className="">
+            <img src={logo} className="max-w-full"></img>
           </div>
 
           {/* Explore */}
@@ -85,13 +85,13 @@ const Footer = () => {
             <address className="text-sm mb-3 text-white">
               1000 San Bruno Ave Morgan Hill, CA 95037
             </address>
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center mb-2">
               <i className="fa-regular fa-envelope"></i>
               <span className="text-white text-[1rem]">
                 info@coyoteclays.com
               </span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center">
               <i className="fa-solid fa-phone"></i>
               <a href="tel:408-778-3600" className="text-white text-[1rem]">
                 Contact: 408-778-3600

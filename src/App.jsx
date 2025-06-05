@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Info from "./components/Info";
 import WhyChooseUs from "./components/WhyChooseUs";
 import FrequentlyAsked from "./components/FrequentlyAsked";
+import Gallary from "./components/Gallary";
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Info />
       <FrequentlyAsked />
       <WhyChooseUs />
+      <Gallary />
       <Footer />
     </>
   );
