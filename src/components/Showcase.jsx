@@ -83,7 +83,7 @@ const Showcase = () => {
                 height: "100vh",
               }}
             >
-              <div className="container flex-col pt-20">
+              <div className="container flex-col justify-center">
                 <h6 className="text-white text-sm uppercase mb-3">
                   Premier Clay Shooting Experience
                 </h6>
@@ -95,12 +95,14 @@ const Showcase = () => {
                   {slide.description}
                 </p>
                 <div className="header_btn">
-                  <a
-                    href="#about"
-                    className="btn-main bg-white px-[2rem] py-[1rem] text-black rounded hover:bg-gray-100 transition"
+                  <button
+                    className="btn-main mt-4 translate-y-[10px] p-4"
+                    style={{
+                      color: "#fff",
+                    }}
                   >
                     Explore More
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

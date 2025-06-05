@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Info from "./components/Info";
 import WhyChooseUs from "./components/WhyChooseUs";
 import FrequentlyAsked from "./components/FrequentlyAsked";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Info />
       <FrequentlyAsked />
       <WhyChooseUs />
+      <Footer />
     </>
   );
 }

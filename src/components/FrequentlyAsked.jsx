@@ -29,7 +29,7 @@ const FrequentlyAsked = () => {
                     patience and clarity. Build confidence in a safe, supportive
                     learning environment.
                   </p>
-                  <button className="btn-main px-8 py-3 uppercase">
+                  <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
                     Learn
                   </button>
                 </div>
@@ -55,7 +55,7 @@ const FrequentlyAsked = () => {
                     for improving accuracy, timing, and control. Whether solo or
                     with a group, each round builds mastery.
                   </p>
-                  <button className="btn-main px-4 py-2 uppercase">
+                  <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
                     Practise
                   </button>
                 </div>
@@ -81,7 +81,7 @@ const FrequentlyAsked = () => {
                     Explore beautiful grounds designed for relaxation and sport.
                     It's more than shooting—it's an unforgettable experience.
                   </p>
-                  <button className="btn-main px-4 py-2 uppercase">
+                  <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
                     Enjoy
                   </button>
                 </div>

@@ -173,41 +173,33 @@ button {
 
 /* Custom Button */
 .btn-main {
-  border: 2px solid #d56602 !important;
-  background: transparent !important;
-  color: #d56602;
-  border-radius: 0% !important;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.9rem;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  position: relative;
-  border-radius: 10px !important;
+  color: #222;
 }
 
+.btn-main::after,
 .btn-main::before {
-  position: absolute;
+  border: 3px solid #D56602;
   content: "";
-  display: block;
-  width: 0%;
-  height: 100%;
-  background-color: #d56602;
-  top: 0%;
-  left: 0%;
+  position: absolute;
+  width: calc(
+    100%-6px
+  ); /* If direct 100% width given, due to border it will cover more area in right and bottom as it is absolute to relative */
+  height: calc(100%-6px);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.btn-main:hover::after {
+  transform: translate(-5px, -5px);
 }
 
 .btn-main:hover::before {
-  width: 100%;
-  border-radius: 10px;
+  transform: translate(5px, 5px);
 }
-.btn-main:hover {
-  color: #fff;
-}
-
 /* Header */
 #header {
   height: 100vh;
