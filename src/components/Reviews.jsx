@@ -18,10 +18,10 @@ const Reviews = () => {
         <div className="container mb-14">
           <div className="max-w-7xl mx-auto">
             <div className="top-brands-info text-center">
-              <h5 className="text-lg text-[#fff] uppercase font-bold">
+              <h5 className="text-lg text-[#fff] uppercase font-medium">
                 Clients Across World
               </h5>
-              <h4 className="sm:text-4xl text-3xl text-[#fff] uppercase font-bold my-3">
+              <h4 className="sm:text-4xl text-3xl text-[#fff] uppercase font-medium my-3">
                 Comments from your friends
               </h4>
               <p className="text-[#fff] text-sm mt-3">

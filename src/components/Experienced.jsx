@@ -9,21 +9,17 @@ const Experienced = () => {
   return (
     <section className="w-full py-20">
       <div className="container flex-col">
-        <div className="max-w-7xl mx-auto mb-12">
-          <div className="top-brands-info text-center">
-            <h5 className="text-lg text-[#818062] uppercase font-bold">
-              ESSENTIALS & EXPERIENCES
-            </h5>
-            <h4 className="sm:text-4xl text-3xl text-primary_bg uppercase font-bold my-3">
-              EVERYTHING YOU NEED, ALL IN ONE PLACE
-            </h4>
-            <p className="text-primary_text max-w-7xl text-sm mt-3">
-              Coyote Valley Sporting Clays is a premier destination for shooters
-              of all skill levels. Our facility offers a comprehensive range of
-              experiences, from group packages to private instruction, ensuring
-              every visitor finds their perfect shooting experience.
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto mb-12 text-center">
+          <h5 className="text-lg text-[#818062] uppercase font-medium">
+            ESSENTIALS & EXPERIENCES
+          </h5>
+          <h4 className="sm:text-4xl text-3xl text-primary_bg uppercase font-medium my-3">
+            EVERYTHING YOU NEED, ALL IN ONE PLACE
+          </h4>
+          <p className="text-primary_text max-w-xl mx-auto text-sm mt-3">
+            Discover top-tier gear, expert instruction, and scenic shooting
+            courses at Coyote Clays.
+          </p>
         </div>
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
