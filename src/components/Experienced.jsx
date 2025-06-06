@@ -17,7 +17,7 @@ const Experienced = () => {
             <h4 className="sm:text-4xl text-3xl text-primary_bg uppercase font-bold my-3">
               EVERYTHING YOU NEED, ALL IN ONE PLACE
             </h4>
-            <p className="text-primary_text text-sm mt-3">
+            <p className="text-primary_text max-w-7xl text-sm mt-3">
               Coyote Valley Sporting Clays is a premier destination for shooters
               of all skill levels. Our facility offers a comprehensive range of
               experiences, from group packages to private instruction, ensuring
