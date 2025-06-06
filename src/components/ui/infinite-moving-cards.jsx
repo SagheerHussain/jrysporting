@@ -47,7 +47,7 @@ const InfiniteMovingCards = ({
   const getSpeed = () => {
     if (containerRef.current) {
       const duration =
-        speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
+        speed === "fast" ? "20s" : speed === "normal" ? "40s" : "140s";
       containerRef.current.style.setProperty("--animation-duration", duration);
     }
   };
@@ -71,11 +71,11 @@ const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 px-8 py-6 md:w-[450px] dark:border-zinc-700 "
+            className="relative w-[350px] max-w-full shrink-0 rounded-2xl px-8 py-6 md:w-[450px] "
             style={{
               background: "url('/Images/texture.png')",
               backgroundBlendMode: "multiply",
-              backgroundColor: "#818062",
+              backgroundColor: "#D56602",
             }}
           >
             <blockquote>
