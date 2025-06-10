@@ -11,7 +11,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+text {
   font-family: "SF Fedora";
   fontsize: "48px";
   color: "orange";
@@ -205,6 +206,9 @@ button {
 #header {
   height: 100vh;
   width: 100vw;
+}
+.list-disc li::marker {
+  color: #818062;
 }
 
 /* ################################

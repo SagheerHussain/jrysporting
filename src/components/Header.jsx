@@ -1,6 +1,6 @@
 import React from "react";
-import TestNavbar from "./TestNavbar";
 import Showcase from "./Showcase";
+import Navbar from "./Navbar";
 
 const Header = () => {
   const settings = {
@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header id="header" className="relative">
-      <TestNavbar />
+      <Navbar />
       <Showcase />
     </header>
   );

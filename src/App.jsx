@@ -2,27 +2,24 @@ import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./assets/fonts/fonts.css";
-import Header from "./components/Header";
-import Info from "./components/Info";
-import WhyChooseUs from "./components/WhyChooseUs";
-import FrequentlyAsked from "./components/FrequentlyAsked";
-import Gallary from "./components/Gallary";
-import Footer from "./components/Footer";
-import Reviews from "./components/Reviews";
-import Experienced from "./components/Experienced";
+import HomePage from "./pages/HomePage";
+import { Routes, Route } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
+import ProShopPage from "./pages/ProShopPage";
+import GunTransferPage from "./pages/GunTransferPage";
+import EventsPage from "./pages/EventsPage";
+import ContactPage from "./pages/ContactPage";
 
-function App() {  
+function App() {
   return (
-    <>
-      <Header />
-      <Info />
-      <FrequentlyAsked />
-      <WhyChooseUs />
-      <Gallary />
-      <Reviews />
-      <Experienced />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/coyoto-valley" element={<AboutPage />} />
+      <Route path="/proshop" element={<ProShopPage />} />
+      <Route path="/gun-transfer" element={<GunTransferPage />} />
+      <Route path="/events" element={<EventsPage />} />
+      {/* <Route path="/contact" element={<ContactPage />} /> */}
+    </Routes>
   );
 }
 
