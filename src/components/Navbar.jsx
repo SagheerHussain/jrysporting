@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const [showStickyMenu, setShowStickyMenu] = useState(false);
@@ -25,15 +26,15 @@ const Navbar = () => {
   return (
     <>
       <nav id="navbar">
-        <div className="container d-flex">
+        <div className="container flex">
           <div className="logo">
             <a href="/" className="d-flex align-items-center">
               <Logo className="max-w-[200px] p-3" alt="" />
             </a>
           </div>
           <div className="w-full">
-            <div className="bottom-menu h-[50%] d-flex align-items-center justify-content-between px-4 pt-2">
-              <div className="flex bottom-menu-unordered-list">
+            <div className="bottom-menu h-[50%] items-center justify-between px-4 pt-2 flex">
+              <div className="lg:flex hidden bottom-menu-unordered-list">
                 {[
                   { label: "Home", slug: "/" },
                   {
@@ -43,17 +44,17 @@ const Navbar = () => {
                       { label: "Coyoto Valley", slug: "/coyoto-valley" },
                       { label: "Proshop", slug: "/proshop" },
                       { label: "Gun Transfer", slug: "/gun-transfer" },
-                      { label: "Lodging", slug: "#" },
-                      { label: "FAQ", slug: "#" },
+                      { label: "Lodging", slug: "/lodging" },
+                      { label: "FAQ", slug: "/faq" },
                     ],
                   },
                   {
                     label: "Shooting",
                     slug: "#",
                     subMenu: [
-                      { label: "Courses", slug: "#" },
-                      { label: "Ranges Rules", slug: "#" },
-                      { label: "Requierements", slug: "#" },
+                      { label: "Courses", slug: "/courses" },
+                      { label: "Ranges Rules", slug: "/range-rules" },
+                      { label: "Requierements", slug: "/requirements" },
                       { label: "First Time Shooters", slug: "#" },
                     ],
                   },
@@ -112,20 +113,26 @@ const Navbar = () => {
                             key={subIndex}
                             className="text-secondary_text border-b-[1px] hover:cursor-pointer hover:bg-secondary_bg hover:text-primary_text_hover border-b-border_primary pe-4 py-3 ps-3 text-[13px] uppercase font-medium transition-all duration-300 ease-in-out"
                           >
-                            <Link to={subItem.slug} className="block">{subItem.label}</Link>
+                            <Link to={subItem.slug} className="block">
+                              {subItem.label}
+                            </Link>
                           </div>
                         ))}
-                      </div>  
+                      </div>
                     )}
                   </div>
                 ))}
               </div>
 
-              <p className=" flex items-center">
+              <p className="lg:flex hidden items-center">
                 <IoMdCall className="inline bg-primary_bg p-1 text-[24px] me-2 text-white rounded-full" />
                 <a href="tel:408 778 3600" className="text-white text-[.7rem]">
                   408 778 3600
                 </a>
+              </p>
+
+              <p className="flex justify-end lg:hidden w-full">
+                <IoMenu className="inline mb-2 text-[24px] me-2 text-white rounded-full" />
               </p>
             </div>
           </div>
@@ -144,7 +151,7 @@ const Navbar = () => {
       >
         <div className="container">
           <div className="bottom-menu h-[50%] flex items-center justify-between px-4 pt-2">
-            <ul className="flex bottom-menu-unordered-list">
+            <ul className="lg:flex hidden bottom-menu-unordered-list">
               {[
                 { label: "Home", slug: "/" },
                 {
@@ -154,8 +161,8 @@ const Navbar = () => {
                     { label: "Coyoto Valley", slug: "/coyoto-valley" },
                     { label: "Proshop", slug: "/proshop" },
                     { label: "Gun Transfer", slug: "/gun-transfer" },
-                    { label: "Lodging", slug: "#" },
-                    { label: "FAQ", slug: "#" },
+                    { label: "Lodging", slug: "/lodging" },
+                    { label: "FAQ", slug: "/faq" },
                   ],
                 },
                 {
@@ -230,12 +237,16 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <p className="flex items-center justify-end pb-1">
+            <p className="lg:flex hidden items-center justify-end pb-1">
               <IoMdCall className="inline bg-primary_bg p-1 text-[24px] me-2 text-white rounded-full" />
               <a href="tel:408 778 3600" className="text-white text-[.7rem]">
                 408 778 3600
               </a>
             </p>
+
+            <div className="flex justify-end lg:hidden">
+              <IoMenu className="inline mb-2 text-[24px] me-2 text-white rounded-full w-full" />
+            </div>
           </div>
         </div>
       </div>

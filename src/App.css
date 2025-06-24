@@ -36,6 +36,30 @@ Utilities Classes
   display: flex;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1000px;
+  }
+  .bottom-menu .bottom-menu-unordered-list .menu-list-link {
+    font-size: 0.55rem !important;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
 .btn-primary {
   background: #a3a777;
   color: #fff;
@@ -285,10 +309,6 @@ Navbar Styling Portion
 
 #navbar .bottom-menu {
   width: 100%;
-  /* height: 60%; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: url("/Images/texture.png"), #9c5043;
   background-blend-mode: multiply;
   background-size: contain;
@@ -309,7 +329,6 @@ Navbar Styling Portion
 }
 
 .bottom-menu .bottom-menu-unordered-list {
-  display: flex;
   list-style: none;
 }
 

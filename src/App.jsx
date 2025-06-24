@@ -9,6 +9,11 @@ import ProShopPage from "./pages/ProShopPage";
 import GunTransferPage from "./pages/GunTransferPage";
 import EventsPage from "./pages/EventsPage";
 import ContactPage from "./pages/ContactPage";
+import LodgingPage from "./pages/LodgingPage";
+import FAQPage from "./pages/FAQPage";
+import CoursesPage from "./pages/CoursesPage";
+import RangeRulesPage from "./pages/RangeRulesPage";
+import RequirementsPage from "./pages/RequirementsPage";
 
 function App() {
   return (
@@ -17,6 +22,11 @@ function App() {
       <Route path="/coyoto-valley" element={<AboutPage />} />
       <Route path="/proshop" element={<ProShopPage />} />
       <Route path="/gun-transfer" element={<GunTransferPage />} />
+      <Route path="/lodging" element={<LodgingPage />} />
+      <Route path="/courses" element={<CoursesPage />} />
+      <Route path="/range-rules" element={<RangeRulesPage />} />
+      <Route path="/requirements" element={<RequirementsPage />} />
+      <Route path="/faq" element={<FAQPage />} />
       <Route path="/events" element={<EventsPage />} />
       {/* <Route path="/contact" element={<ContactPage />} /> */}
     </Routes>
