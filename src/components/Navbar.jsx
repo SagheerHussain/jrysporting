@@ -55,7 +55,7 @@ const Navbar = () => {
                       { label: "Courses", slug: "/courses" },
                       { label: "Ranges Rules", slug: "/range-rules" },
                       { label: "Requierements", slug: "/requirements" },
-                      { label: "First Time Shooters", slug: "#" },
+                      { label: "First Time Shooters", slug: "/first-time-shooter" },
                     ],
                   },
                   {

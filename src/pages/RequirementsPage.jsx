@@ -32,6 +32,7 @@ const RequirementsPage = () => {
       description:
         "All participants must know and be able to follow our Range Safety Rules. We are uncompromising in this requirement. We reserve the right to refuse service to anyone and will definitely do so when safety rules are violated.",
       button: true,
+      btnText: "Read Rules",
     },
   ];
 
@@ -43,7 +44,7 @@ const RequirementsPage = () => {
         subTitle="Shooter Safety is Our Top Priority"
         description="You must be experienced in shotgun shooting and be able to handle a shotgun safely (firearm safety) and be familiar and comply with our range rules. If you do not meet this requirement, we may permit you on the range accompanied by someone who meets this requirement, at our discretion. Otherwise, you are required to have assistance from an instructor via a private lesson appointment or an Experience  Reservation, see below."
       />
-      <Requirements requirementData={requirementData} />
+      <Requirements title="You MUST Follow These Guidelines" requirementData={requirementData} />
       <Footer />
     </>
   );

@@ -14,6 +14,7 @@ import FAQPage from "./pages/FAQPage";
 import CoursesPage from "./pages/CoursesPage";
 import RangeRulesPage from "./pages/RangeRulesPage";
 import RequirementsPage from "./pages/RequirementsPage";
+import FirstTimeShooterPage from "./pages/FirstTimeShooterPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/courses" element={<CoursesPage />} />
       <Route path="/range-rules" element={<RangeRulesPage />} />
       <Route path="/requirements" element={<RequirementsPage />} />
+      <Route path="/first-time-shooter" element={<FirstTimeShooterPage />} />
       <Route path="/faq" element={<FAQPage />} />
       <Route path="/events" element={<EventsPage />} />
       {/* <Route path="/contact" element={<ContactPage />} /> */}
