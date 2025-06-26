@@ -68,7 +68,7 @@ const Navbar = () => {
                       { label: "Home Defence", slug: "/home-defense" },
                     ],
                   },
-                  { label: "Pricing", slug: "#" },
+                  { label: "Pricing", slug: "/pricing" },
                   { label: "Calender", slug: "#" },
                   { label: "Events", slug: "/events" },
                   { label: "Contact", slug: "/contact" },

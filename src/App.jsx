@@ -19,6 +19,7 @@ import ExperiencePage from "./pages/ExperiencePage";
 import PrivateInstructionsPage from "./pages/PrivateInstructionsPage";
 import NRA_Pistol_ClassPage from "./pages/NRAPistolClassPage";
 import HomeDefensePage from "./pages/HomeDefensePage";
+import PricingPage from "./pages/PricingPage";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Route path="/home-defense" element={<HomeDefensePage />} />
       <Route path="/faq" element={<FAQPage />} />
       <Route path="/events" element={<EventsPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
       {/* <Route path="/contact" element={<ContactPage />} /> */}
     </Routes>
   );
