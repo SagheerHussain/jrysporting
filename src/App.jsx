@@ -15,6 +15,10 @@ import CoursesPage from "./pages/CoursesPage";
 import RangeRulesPage from "./pages/RangeRulesPage";
 import RequirementsPage from "./pages/RequirementsPage";
 import FirstTimeShooterPage from "./pages/FirstTimeShooterPage";
+import ExperiencePage from "./pages/ExperiencePage";
+import PrivateInstructionsPage from "./pages/PrivateInstructionsPage";
+import NRA_Pistol_ClassPage from "./pages/NRAPistolClassPage";
+import HomeDefensePage from "./pages/HomeDefensePage";
 
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
       <Route path="/range-rules" element={<RangeRulesPage />} />
       <Route path="/requirements" element={<RequirementsPage />} />
       <Route path="/first-time-shooter" element={<FirstTimeShooterPage />} />
+      <Route path="/experience-package" element={<ExperiencePage />} />
+      <Route path="/private-instructions" element={<PrivateInstructionsPage />} />
+      <Route path="/nra-pistol-class" element={<NRA_Pistol_ClassPage />} />
+      <Route path="/home-defense" element={<HomeDefensePage />} />
       <Route path="/faq" element={<FAQPage />} />
       <Route path="/events" element={<EventsPage />} />
       {/* <Route path="/contact" element={<ContactPage />} /> */}
