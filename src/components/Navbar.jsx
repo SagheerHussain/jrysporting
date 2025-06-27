@@ -80,7 +80,7 @@ const Navbar = () => {
                     ],
                   },
                   { label: "Pricing", slug: "/pricing" },
-                  { label: "Calender", slug: "#" },
+                  { label: "Calender", slug: "/calender" },
                   { label: "Events", slug: "/events" },
                   { label: "Contact", slug: "/contact" },
                 ].map((item, index) => (

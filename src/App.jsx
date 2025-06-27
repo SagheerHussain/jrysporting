@@ -20,6 +20,7 @@ import PrivateInstructionsPage from "./pages/PrivateInstructionsPage";
 import NRA_Pistol_ClassPage from "./pages/NRAPistolClassPage";
 import HomeDefensePage from "./pages/HomeDefensePage";
 import PricingPage from "./pages/PricingPage";
+import CalenderPage from "./pages/CalenderPage";
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
       <Route path="/faq" element={<FAQPage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/pricing" element={<PricingPage />} />
-      {/* <Route path="/contact" element={<ContactPage />} /> */}
+      <Route path="/calender" element={<CalenderPage />} />
+      <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
 }

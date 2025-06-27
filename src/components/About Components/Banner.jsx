@@ -18,7 +18,7 @@ const Banner = ({ title, banner }) => {
         <div className="overlay absolute top-0 left-0 w-full h-full bg-black opacity-75 z-[-1]"></div>
         <div className="flex items-center justify-center flex-col w-full z-[999]">
           <h1
-            className="text-[2.5rem] mt-10 sm:text-[3rem] md:text-[4rem] lg:text-[6rem] xl:text-[7rem] uppercase text-[#d56602]"
+            className="text-[2.5rem] mt-10 sm:text-[3rem] md:text-[4rem] text-center lg:text-[6rem] xl:text-[7rem] uppercase text-[#d56602]"
           >
             {title}
           </h1>

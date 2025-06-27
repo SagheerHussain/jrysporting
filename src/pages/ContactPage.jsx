@@ -9,7 +9,7 @@ const ContactPage = () => {
   return (
     <>
       <Header title="Contact Us" banner={contactBanner} />
-      <ContactInfo />
+      {/* <ContactInfo /> */}
       <ContactForm />
       <Footer />
     </>
