@@ -2,24 +2,24 @@ import React from "react";
 
 const colorClasses = {
   purple: {
-    border: "border-t-4 border-purple-600",
-    text: "text-purple-600",
+    border: "border-t-4 border-[#FB9E3A]",
+    text: "text-[#FB9E3A]",
   },
   pink: {
-    border: "border-t-4 border-pink-600",
-    text: "text-pink-600",
+    border: "border-t-4 border-[#EA2F14]",
+    text: "text-[#EA2F14]",
   },
   orange: {
-    border: "border-t-4 border-orange-600",
-    text: "text-orange-600",
+    border: "border-t-4 border-[#EA2F14]",
+    text: "text-[#EA2F14]",
   },
   teal: {
-    border: "border-t-4 border-teal-500",
-    text: "text-teal-500",
+    border: "border-t-4 border-[#EA2F14]",
+    text: "text-[#EA2F14]",
   },
   green: {
-    border: "border-t-4 border-green-600",
-    text: "text-green-600",
+    border: "border-t-4 border-[#FB9E3A]",
+    text: "text-[#FB9E3A]",
   },
 };
 
@@ -75,7 +75,7 @@ const AmmuPricing = () => {
   const equipmentRentalsCards = [
     {
       title: "SHOTGUN RENTAL",
-      price: ".20",
+      price: "20",
       subtitle: "Per Shot",
       note: "$20 minimum",
       extra: "(rental rate doubles in rain)",

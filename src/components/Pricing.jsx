@@ -34,19 +34,19 @@ const plans = [
 // Map priceColor keys to actual Tailwind classes
 const colorClassMap = {
   "purple-600": {
-    border: "border-t-4 border-purple-600",
-    text: "text-purple-600",
-    check: "text-purple-600",
+    border: "border-t-4 border-[#FB9E3A]",
+    text: "text-[#FB9E3A]",
+    check: "text-[#FB9E3A]",
   },
   "pink-600": {
-    border: "border-t-4 border-pink-600",
-    text: "text-pink-600",
-    check: "text-pink-600",
+    border: "border-t-4 border-[#E6521F]",
+    text: "text-[#E6521F]",
+    check: "text-[#E6521F]",
   },
   "teal-500": {
-    border: "border-t-4 border-teal-500",
-    text: "text-teal-500",
-    check: "text-teal-500",
+    border: "border-t-4 border-[#FB9E3A]",
+    text: "text-[#FB9E3A]",
+    check: "text-[#FB9E3A]",
   },
 };
 
