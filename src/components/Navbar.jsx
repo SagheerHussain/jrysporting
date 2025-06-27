@@ -5,9 +5,11 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const [showStickyMenu, setShowStickyMenu] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,9 +30,9 @@ const Navbar = () => {
       <nav id="navbar">
         <div className="container flex">
           <div className="logo">
-            <a href="/" className="d-flex align-items-center">
+            <Link to="/" className="d-flex align-items-center">
               <Logo className="max-w-[200px] p-3" alt="" />
-            </a>
+            </Link>
           </div>
           <div className="w-full">
             <div className="bottom-menu h-[50%] items-center justify-between px-4 pt-2 flex">
@@ -55,15 +57,24 @@ const Navbar = () => {
                       { label: "Courses", slug: "/courses" },
                       { label: "Ranges Rules", slug: "/range-rules" },
                       { label: "Requierements", slug: "/requirements" },
-                      { label: "First Time Shooters", slug: "/first-time-shooter" },
+                      {
+                        label: "First Time Shooters",
+                        slug: "/first-time-shooter",
+                      },
                     ],
                   },
                   {
                     label: "Instructions",
                     slug: "#",
                     subMenu: [
-                      { label: "Experience Package", slug: "/experience-package" },
-                      { label: "Private Instructions", slug: "/private-instructions" },
+                      {
+                        label: "Experience Package",
+                        slug: "/experience-package",
+                      },
+                      {
+                        label: "Private Instructions",
+                        slug: "/private-instructions",
+                      },
                       { label: "NRA Pistol Class", slug: "/nra-pistol-class" },
                       { label: "Home Defence", slug: "/home-defense" },
                     ],
@@ -132,7 +143,10 @@ const Navbar = () => {
               </p>
 
               <p className="flex justify-end lg:hidden w-full">
-                <IoMenu className="inline mb-2 text-[24px] me-2 text-white rounded-full" />
+                <IoMenu
+                  onClick={() => setShowSidebar(!showSidebar)}
+                  className="inline mb-2 text-[24px] me-2 text-white rounded-full"
+                />
               </p>
             </div>
           </div>
@@ -140,7 +154,7 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`fixed top-0 left-0 py-4 w-full z-[999] transition-transform duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 py-4 w-full z-[9] transition-transform duration-500 ease-in-out ${
           showStickyMenu ? "translate-y-0" : "-translate-y-full"
         }`}
         style={{
@@ -243,12 +257,23 @@ const Navbar = () => {
                 408 778 3600
               </a>
             </p>
+          </div>
 
-            <div className="flex justify-end lg:hidden">
-              <IoMenu className="inline mb-2 text-[24px] me-2 text-white rounded-full w-full" />
-            </div>
+          <div className="flex justify-end px-4 w-full lg:hidden">
+            <IoMenu
+              onClick={() => setShowSidebar(!showSidebar)}
+              className="text-[28px] text-white p-1 rounded-full"
+            />
           </div>
         </div>
+      </div>
+
+      <div
+        className={`fixed top-0 left-0 h-full w-[300px] z-[9999] transform transition-transform duration-500 ease-in-out ${
+          showSidebar ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <Sidebar setShowSidebar={setShowSidebar} />
       </div>
     </>
   );
