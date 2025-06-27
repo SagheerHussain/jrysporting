@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const rulesData = [
   {
@@ -154,9 +155,13 @@ function RangeRules() {
             </div>
           </div>
         ))}
-        <button className="btn-main mt-4 translate-y-[10px] p-4">
-          Read More Policies
-        </button>
+        <div className="text-center">
+          <Link to="/faq">
+            <button className="btn-main mt-4 translate-y-[10px] p-4">
+              Read More Policies
+            </button>
+          </Link>
+        </div>
       </div>
     </section>
   );

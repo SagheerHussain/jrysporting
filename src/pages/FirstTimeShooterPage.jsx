@@ -19,6 +19,7 @@ const FirstTimeShooterPage = () => {
       description:
         "For 1-2 first time shooters, please make an appointment for a Private Lesson.",
       button: true,
+      link: "/private-instructions",
       btnText: "Private",
     },
     {
@@ -28,6 +29,7 @@ const FirstTimeShooterPage = () => {
         "For groups of three or more first time shooters, please book an “Experience Package”.",
       button: true,
       btnText: "Experience",
+      link: "/experience-package",
     },
   ];
 

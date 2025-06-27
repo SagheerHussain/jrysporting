@@ -4,6 +4,7 @@ import experiencedTwo from "/Images/experienced/experienced (2).webp";
 import experiencedThree from "/Images/experienced/experienced ( 3 ).webp";
 import experiencedFour from "/Images/experienced/experienced (4).jpg";
 import experiencedFive from "/Images/experienced/experienced (5 ).webp";
+import { Link } from "react-router-dom";
 
 const Experienced = () => {
   return (
@@ -36,12 +37,14 @@ const Experienced = () => {
                 Our Most Popular Group Package
               </p>
               <div>
-                <button
-                  className="btn-main mt-4 translate-y-[10px] py-4 px-6"
-                  style={{ color: "#fff" }}
-                >
-                  Explore More
-                </button>
+                <Link to={"/experience-package"}>
+                  <button
+                    className="btn-main mt-4 translate-y-[10px] py-4 px-6"
+                    style={{ color: "#fff" }}
+                  >
+                    Explore More
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -53,21 +56,25 @@ const Experienced = () => {
                 title: "Visit Our Pro Shop",
                 label: "ProShop",
                 image: experiencedTwo,
+                link: "/proshop",
               },
               {
                 title: "Get Private Instruction",
                 label: "Instruction",
                 image: experiencedThree,
+                link: "/private-instructions",
               },
               {
                 title: "See the Shooting Courses",
                 label: "Courses",
                 image: experiencedFour,
+                link: "/courses",
               },
               {
                 title: "Read the Range Rules",
                 label: "Rules",
                 image: experiencedFive,
+                link: "/range-rules",
               },
             ].map((item, idx) => (
               <div
@@ -83,12 +90,14 @@ const Experienced = () => {
                   <h3 className="text-lg font-semibold text-center">
                     {item.title}
                   </h3>
+                  <Link to={item.link}>
                   <button
                     className="btn-main mt-4 translate-y-[10px] py-4 px-6"
                     style={{ color: "#fff" }}
                   >
                     {item.label}
                   </button>
+                  </Link>
                 </div>
               </div>
             ))}

@@ -32,6 +32,7 @@ const RequirementsPage = () => {
       description:
         "All participants must know and be able to follow our Range Safety Rules. We are uncompromising in this requirement. We reserve the right to refuse service to anyone and will definitely do so when safety rules are violated.",
       button: true,
+      link: "/range-rules",
       btnText: "Read Rules",
     },
   ];

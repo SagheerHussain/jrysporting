@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import logo from "/Images/white-logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [toggler, setToggler] = useState(false);
@@ -37,44 +38,44 @@ const Footer = () => {
             <h6 className="text-lg mb-3 text-primary_bg">Explore</h6>
             <ul className="flex flex-col gap-2">
               <li>
-                <a href="#" className="text-white text-[.8rem]">
+                <Link to="/" className="text-white text-[.8rem]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-[.8rem]">
-                  About
-                </a>
+                <Link to="/coyoto-valley" className="text-white text-[.8rem]">
+                  Coyoto Valley
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-[.8rem]">
-                  Shooting
-                </a>
+                <Link to="/proshop" className="text-white text-[.8rem]">
+                  Proshop
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-[.8rem]">
+                <Link to="/private-instructions" className="text-white text-[.8rem]">
                   Instructions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-[.8rem]">
+                <Link to="/pricing" className="text-white text-[.8rem]">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-[.8rem]">
+                <Link to="/calender" className="text-white text-[.8rem]">
                   Calender
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-[.8rem]">
+                <Link to="/events" className="text-white text-[.8rem]">
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-[.8rem]">
+                <Link to="/contact" className="text-white text-[.8rem]">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -87,9 +88,9 @@ const Footer = () => {
             </address>
             <div className="flex items-center mb-2">
               <i className="fa-regular fa-envelope"></i>
-              <span className="text-white text-[1rem]">
+              <a href="mailto:info@coyoteclays.com" className="text-white text-[1rem]">
                 info@coyoteclays.com
-              </span>
+              </a>
             </div>
             <div className="flex items-center">
               <i className="fa-solid fa-phone"></i>
@@ -106,14 +107,16 @@ const Footer = () => {
               alt=""
             />
             <div className="text-center">
-              <button
-                className="btn-main text-primary_bg translate-y-[25px] p-4"
-                style={{
-                  color: "#fff",
-                }}
-              >
-                Cowboy Calender
-              </button>
+              <a target="_blank" href="https://www.coyotevalleycowboys.com/newpage#Calendar">
+                <button
+                  className="btn-main text-primary_bg translate-y-[25px] p-4"
+                  style={{
+                    color: "#fff",
+                  }}
+                >
+                  Cowboy Calender
+                </button>
+              </a>
             </div>
           </div>
         </div>

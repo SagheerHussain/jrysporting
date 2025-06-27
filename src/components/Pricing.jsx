@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const plans = [
   {
@@ -54,9 +55,10 @@ const Pricing = () => {
   return (
     <section className="bg-gray-50 flex items-center justify-center py-20">
       <div className="container flex-col">
-
         <h2 className="text-4xl text-[#D56602] mb-12 text-center">Pricing</h2>
-        <h4 className="text-2xl text-[#D56602] mb-10 after:block after:translate-y-2 after:bg-[#D56602] after:w-full after:h-[1px] after:content-['']">Clay Targets</h4>
+        <h4 className="text-2xl text-[#D56602] mb-10 after:block after:translate-y-2 after:bg-[#D56602] after:w-full after:h-[1px] after:content-['']">
+          Clay Targets
+        </h4>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl w-full">
           {plans.map(({ name, price, priceColor, features }) => {
@@ -68,11 +70,13 @@ const Pricing = () => {
               >
                 <h3 className={`text-xl ${colorClasses.text} mb-6`}>{name}</h3>
                 <div className="flex items-start gap-2 mb-6">
-                  <span className={`text-4xl font-bold ${colorClasses.text}`}>$</span>
+                  <span className={`text-4xl font-bold ${colorClasses.text}`}>
+                    $
+                  </span>
                   <span
                     className={`text-6xl font-extrabold ${colorClasses.text}`}
                   >
-                    {price.split(".")[0]} 
+                    {price.split(".")[0]}
                   </span>
                   <span
                     className={`text-2xl font-bold mt-3 rounded-full ${colorClasses.text}`}
@@ -95,9 +99,11 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8">
-                  Contact Now
-                </button>
+                <Link to="/contact">
+                  <button className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8">
+                    Contact Now
+                  </button>
+                </Link>
               </div>
             );
           })}

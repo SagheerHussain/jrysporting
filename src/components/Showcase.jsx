@@ -7,6 +7,7 @@ import bannerThree from "/Images/Hero Section Banner/47.webp";
 import bannerFour from "/Images/Hero Section Banner/48.webp";
 import bannerFive from "/Images/Hero Section Banner/49.webp";
 import bannerSix from "/Images/Hero Section Banner/50.webp";
+import { Link } from "react-router-dom";
 
 const Showcase = () => {
   const settings = {
@@ -95,14 +96,16 @@ const Showcase = () => {
                   {slide.description}
                 </p>
                 <div className="header_btn">
-                  <button
-                    className="btn-main mt-4 translate-y-[10px] p-4"
-                    style={{
-                      color: "#fff",
-                    }}
-                  >
-                    Explore More
-                  </button>
+                  <Link to={'/coyoto-valley'}>
+                    <button
+                      className="btn-main mt-4 translate-y-[10px] p-4"
+                      style={{
+                        color: "#fff",
+                      }}
+                    >
+                      Explore More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

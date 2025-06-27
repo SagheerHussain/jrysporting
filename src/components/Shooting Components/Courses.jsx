@@ -4,6 +4,7 @@ import "react-tabs/style/react-tabs.css";
 import mainCourse from "/Images/shooting/courses/map (1).webp";
 import skeet from "/Images/shooting/courses/map (2).webp";
 import trap from "/Images/shooting/courses/map (3).webp";
+import { Link } from "react-router-dom";
 
 const tabsData = [
   {
@@ -59,9 +60,10 @@ function Courses() {
   return (
     <section className="courses py-20">
       <div className="container flex-col">
-
         <div className="text-center">
-            <h1 className="text-[#D56602] text-4xl mb-20">Our Shooting Courses</h1>
+          <h1 className="text-[#D56602] text-4xl mb-20">
+            Our Shooting Courses
+          </h1>
         </div>
 
         <Tabs
@@ -101,9 +103,11 @@ function Courses() {
                     {item}
                   </p>
                 ))}
-                <button className="btn-main mt-4 translate-y-[10px] p-4">
-                  Calender
-                </button>
+                <Link to="/calender">
+                  <button className="btn-main mt-4 translate-y-[10px] p-4">
+                    Calender
+                  </button>
+                </Link>
               </TabPanel>
             ))}
           </div>

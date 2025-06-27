@@ -154,9 +154,11 @@ const Events = () => {
                   <p className="text-5xl font-semibold mb-4">{event.price}</p>
                   <p className="mb-6">{event.perPerson}</p>
                   <p className="text-sm mb-6">{event.description}</p>
+                  <a href="mailto:info@coyoteclays.com">
                   <button className="btn-main text-primary_bg mt-4 translate-y-[10px] w-full p-4">
                     Email Request
                   </button>
+                  </a>
                 </div>
 
                 {/* Right - Facility List */}

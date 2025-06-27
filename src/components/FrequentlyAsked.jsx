@@ -2,6 +2,7 @@ import React from "react";
 import faqImageOne from "/Images/faq (1).webp";
 import faqImageTwo from "/Images/faq (2).webp";
 import faqImageThree from "/Images/faq (3).webp";
+import { Link } from "react-router-dom";
 
 const FrequentlyAsked = () => {
   return (
@@ -28,9 +29,11 @@ const FrequentlyAsked = () => {
                     patience and clarity. Build confidence in a safe, supportive
                     learning environment.
                   </p>
-                  <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
-                    Learn
-                  </button>
+                  <Link to={"/private-instructions"}>
+                    <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
+                      Learn
+                    </button> 
+                  </Link>
                 </div>
               </div>
             </div>
@@ -54,9 +57,11 @@ const FrequentlyAsked = () => {
                     for improving accuracy, timing, and control. Whether solo or
                     with a group, each round builds mastery.
                   </p>
-                  <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
-                    Practise
-                  </button>
+                  <Link to={"/courses"}>
+                    <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
+                      Practise
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -80,9 +85,11 @@ const FrequentlyAsked = () => {
                     Explore beautiful grounds designed for relaxation and sport.
                     It's more than shooting—it's an unforgettable experience.
                   </p>
-                  <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
-                    Enjoy
-                  </button>
+                  <Link to={"/courses"}>
+                    <button className="btn-main text-primary_bg translate-y-[25px] p-4 w-1/2 uppercase">
+                      Enjoy
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

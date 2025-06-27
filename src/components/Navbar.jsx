@@ -167,43 +167,52 @@ const Navbar = () => {
           <div className="bottom-menu h-[50%] flex items-center justify-between px-4 pt-2">
             <ul className="lg:flex hidden bottom-menu-unordered-list">
               {[
-                { label: "Home", slug: "/" },
-                {
-                  label: "About",
-                  slug: "/coyoto-valley",
-                  subMenu: [
-                    { label: "Coyoto Valley", slug: "/coyoto-valley" },
-                    { label: "Proshop", slug: "/proshop" },
-                    { label: "Gun Transfer", slug: "/gun-transfer" },
-                    { label: "Lodging", slug: "/lodging" },
-                    { label: "FAQ", slug: "/faq" },
-                  ],
-                },
-                {
-                  label: "Shooting",
-                  slug: "#",
-                  subMenu: [
-                    { label: "Courses", slug: "#" },
-                    { label: "Ranges Rules", slug: "#" },
-                    { label: "Requierements", slug: "#" },
-                    { label: "First Time Shooters", slug: "#" },
-                  ],
-                },
-                {
-                  label: "Instructions",
-                  slug: "#",
-                  subMenu: [
-                    { label: "Experience Package", slug: "#" },
-                    { label: "Private Instructions", slug: "#" },
-                    { label: "NRA Pistol Class", slug: "#" },
-                    { label: "Home Defence", slug: "#" },
-                  ],
-                },
-                { label: "Pricing", slug: "#" },
-                { label: "Calender", slug: "#" },
-                { label: "Events", slug: "/events" },
-                { label: "Contact", slug: "/contact" },
-              ].map((item, index) => (
+                  { label: "Home", slug: "/" },
+                  {
+                    label: "About",
+                    slug: "/coyoto-valley",
+                    subMenu: [
+                      { label: "Coyoto Valley", slug: "/coyoto-valley" },
+                      { label: "Proshop", slug: "/proshop" },
+                      { label: "Gun Transfer", slug: "/gun-transfer" },
+                      { label: "Lodging", slug: "/lodging" },
+                      { label: "FAQ", slug: "/faq" },
+                    ],
+                  },
+                  {
+                    label: "Shooting",
+                    slug: "#",
+                    subMenu: [
+                      { label: "Courses", slug: "/courses" },
+                      { label: "Ranges Rules", slug: "/range-rules" },
+                      { label: "Requierements", slug: "/requirements" },
+                      {
+                        label: "First Time Shooters",
+                        slug: "/first-time-shooter",
+                      },
+                    ],
+                  },
+                  {
+                    label: "Instructions",
+                    slug: "#",
+                    subMenu: [
+                      {
+                        label: "Experience Package",
+                        slug: "/experience-package",
+                      },
+                      {
+                        label: "Private Instructions",
+                        slug: "/private-instructions",
+                      },
+                      { label: "NRA Pistol Class", slug: "/nra-pistol-class" },
+                      { label: "Home Defence", slug: "/home-defense" },
+                    ],
+                  },
+                  { label: "Pricing", slug: "/pricing" },
+                  { label: "Calender", slug: "/calender" },
+                  { label: "Events", slug: "/events" },
+                  { label: "Contact", slug: "/contact" },
+                ].map((item, index) => (
                 <li
                   key={index}
                   className={`text-primary_text text-[.8rem] ${

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCalendarAlt } from "react-icons/fa";
-import image from "/Images/Instructions/Private Instructions/about.webp"
+import image from "/Images/Instructions/Private Instructions/about.webp";
+import { Link } from "react-router-dom";
 
 const PrivateInstruction = () => {
   return (
@@ -26,20 +27,35 @@ const PrivateInstruction = () => {
         {/* Right: Content and Button */}
         <div className="md:w-2/3 text-gray-700 text-justify space-y-6">
           <p>
-            We offer private shooting instruction in one on one lessons conducted by our staff of certified shooting instructors. Appointments are scheduled by contacting our Instructor Coordinator Ron Silva at (209) 509-3038 or ron300mag@aol.com.
+            We offer private shooting instruction in one on one lessons
+            conducted by our staff of certified shooting instructors.
+            Appointments are scheduled by contacting our Instructor Coordinator
+            Ron Silva at (209) 509-3038 or ron300mag@aol.com.
           </p>
           <p>
-            When you call, Ron will ask a few questions to learn about your experience level and needs, and use that information to help select the best instructor for you. A few things to keep in mind, instruction is offered by the hour with the instructors paid separately from the club with check or cash. Targets, gun rental (if needed), and ammunition are additional and paid to Coyote Valley. Most lessons are one to two hours in length. Lessons may be shared between two persons when they have similar shooting abilities however we recommend individual lessons for the best results.
+            When you call, Ron will ask a few questions to learn about your
+            experience level and needs, and use that information to help select
+            the best instructor for you. A few things to keep in mind,
+            instruction is offered by the hour with the instructors paid
+            separately from the club with check or cash. Targets, gun rental (if
+            needed), and ammunition are additional and paid to Coyote Valley.
+            Most lessons are one to two hours in length. Lessons may be shared
+            between two persons when they have similar shooting abilities
+            however we recommend individual lessons for the best results.
           </p>
           <p>
-            If you are looking for a more general introduction to shotgun shooting, (not a shooting lesson) check out The Experience Package, available for groups of 3 or more.
+            If you are looking for a more general introduction to shotgun
+            shooting, (not a shooting lesson) check out The Experience Package,
+            available for groups of 3 or more.
           </p>
-          <button
-            className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8"
-            aria-label="Experience Package"
-          >
-            Experience
-          </button>
+          <Link to="/experience-package">
+            <button
+              className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8"
+              aria-label="Experience Package"
+            >
+              Experience
+            </button>
+          </Link>
         </div>
       </div>
     </section>

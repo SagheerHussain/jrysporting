@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdCall, IoMdPrint } from "react-icons/io";
 import { MdEmail, MdLocationOn } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const ContactForm = () => {
   return (
@@ -43,12 +44,14 @@ const ContactForm = () => {
               </p>
             </div>
 
-            <button
-              className="btn-main text-primary_bg mt-8 translate-y-[10px] w-full p-4"
-              style={{ color: "#fff" }}
-            >
-              Get Direction
-            </button>
+            <Link to="/faq">
+              <button
+                className="btn-main text-primary_bg mt-8 translate-y-[10px] w-full p-4"
+                style={{ color: "#fff" }}
+              >
+                Get Direction
+              </button>
+            </Link>
 
             <div className="w-full min-h-[300px] mt-12 rounded-lg overflow-hidden shadow-lg">
               <iframe

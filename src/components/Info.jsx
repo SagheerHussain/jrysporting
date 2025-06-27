@@ -1,6 +1,7 @@
 import React from "react";
 import aboutImage from "/Images/about-info.png";
 import CalenderCard from "./CalenderCard";
+import { Link } from "react-router-dom";
 
 const Info = () => {
   return (
@@ -10,8 +11,12 @@ const Info = () => {
           <div className="info_image md:w-[45%] w-full">
             <img src={aboutImage} className="max-w-full h-full" alt="" />
             <div className="flex lg:flex-row md:flex-col sm:flex-row flex-col mt-6 gap-4">
+              <Link to={'/first-time-shooter'}>
                 <button className="btn-main text-primary_bg mt-4 translate-y-[10px] w-full p-4">First Time Shooters Start Here</button>
+              </Link>
+              <Link to={'/experience-package'}>
                 <button className="btn-main text-primary_bg mt-4 translate-y-[10px] w-full p-4">Experience Package Reservations</button>
+              </Link>
             </div>
           </div>
           <div className="info_content md:w-[50%] w-full ps-[5%]">
@@ -49,9 +54,11 @@ const Info = () => {
 
              <CalenderCard />
 
+             <Link to={'/calender'}>
               <button className="btn-main text-primary_bg mt-4 translate-y-[10px] w-full p-4">
                 Full Calender Details
               </button>
+              </Link>
             </div>
           </div>
         </div>

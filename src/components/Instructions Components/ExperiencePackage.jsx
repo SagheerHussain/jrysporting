@@ -47,7 +47,9 @@ const ExperiencePackage = () => {
               }}
             >
               <FaCompass className="text-[#D56602] text-5xl mb-6" />
-              <h3 className="text-xl mb-4 text-[#D56602]">Group Requirements</h3>
+              <h3 className="text-xl mb-4 text-[#D56602]">
+                Group Requirements
+              </h3>
               <p className="text-gray-700 mb-4 max-w-xs">
                 Groups of 26+, to start your reservation, please email us your
                 request at{" "}
@@ -87,9 +89,15 @@ const ExperiencePackage = () => {
               <p className="text-sm font-semibold text-gray-700 mb-6">
                 per person, plus tax
               </p>
-              <button className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8">
-                Reservations
-              </button>
+              <a
+                href="https://fareharbor.com/embeds/book/coyoteclays/items/74834/calendar/2019/12/?flow=36083&full-items=yes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8">
+                  Reservations
+                </button>
+              </a>
             </div>
           </div>
         </div>

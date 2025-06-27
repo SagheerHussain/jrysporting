@@ -32,30 +32,35 @@ const hotels = [
     address: "17035 Condit Road, Morgan Hill, CA 95037",
     phone: "(408) 776-7676",
     logo: "https://irp-cdn.multiscreensite.com/454c6b31/dms3rep/multi/Holiday-Inn.gif",
+    link: "https://www.holidayinn.com/",
   },
   {
     name: "Hampton Inn",
     address: "16115 Condit Road, Morgan Hill, CA 95037",
     phone: "(408) 779-7666",
     logo: "https://irp-cdn.multiscreensite.com/454c6b31/dms3rep/multi/Hampton.gif",
+    link: "https://hamptoninn3.hilton.com/en/hotels/california/hampton-inn-morgan-hill-SJCCRHX/index.html",
   },
   {
     name: "Courtyard Marriott",
     address: "18610 Madrone Parkway, Morgan Hill, CA 95037",
     phone: "(408) 782-6034",
     logo: "https://irp-cdn.multiscreensite.com/454c6b31/dms3rep/multi/Holiday-Inn.gif",
+    link: "https://www.marriott.com/en-us/hotels/sjcmh-courtyard-san-jose-south-morgan-hill/overview/",
   },
   {
     name: "La Quinta Inn and Suites",
     address: "17043 Condit Road, Morgan Hill, CA 95037",
     phone: "(669) 888-37006",
     logo: "https://irp-cdn.multiscreensite.com/454c6b31/dms3rep/multi/Holiday-Inn.gif",
+    link: "https://www.wyndhamhotels.com/laquinta",
   },
   {
     name: "Comfort Inn",
     address: "16225 Condit Road, Morgan Hill, CA 95037",
     phone: "(408) 778-3400",
     logo: "https://irp-cdn.multiscreensite.com/454c6b31/dms3rep/multi/Holiday-Inn.gif",
+    link: "https://www.comfortinnmorganhill.com/",
   },
 ];
 
@@ -97,9 +102,11 @@ function Lodging() {
                 </div>
               </div>
               <div className="w-full">
-                <button className="btn-main mt-4 translate-y-[10px] p-4 w-full">
-                  Visit Website
-                </button>
+                <a href={hotel.link} target="_blank" rel="noopener noreferrer">
+                  <button className="btn-main mt-4 translate-y-[10px] p-4 w-full">
+                    Visit Website
+                  </button>
+                </a>
               </div>
             </div>
           </div>
