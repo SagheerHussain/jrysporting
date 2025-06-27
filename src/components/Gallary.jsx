@@ -36,7 +36,7 @@ const Gallery = () => {
       </div>
 
       <div className="container">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[180px]">
+        <div className="grid grid-cols-4 gap-4 auto-rows-[100px] sm:auto-rows-[180px]">
           {images.map((img, index) => (
             <div
               key={index}

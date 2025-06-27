@@ -39,9 +39,9 @@ const colorClassMap = {
     check: "text-[#FB9E3A]",
   },
   "pink-600": {
-    border: "border-t-4 border-[#E6521F]",
-    text: "text-[#E6521F]",
-    check: "text-[#E6521F]",
+    border: "border-t-4 border-[#EA2F14]",
+    text: "text-[#EA2F14]",
+    check: "text-[#EA2F14]",
   },
   "teal-500": {
     border: "border-t-4 border-[#FB9E3A]",
@@ -96,7 +96,7 @@ const Pricing = () => {
                   ))}
                 </ul>
                 <button className="btn-main text-primary_bg mt-4 translate-y-[10px] py-4 px-8">
-                  Purchase
+                  Contact Now
                 </button>
               </div>
             );

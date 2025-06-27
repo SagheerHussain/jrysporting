@@ -6,10 +6,9 @@ import faqImageThree from "/Images/faq (3).webp";
 const FrequentlyAsked = () => {
   return (
     <section id="faq" className="py-20">
-        <div className="container gap-10">
-
-
-          <div className="faq-box gap-4">
+      <div className="container gap-10">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-4 gap-14">
+          <div className="faq-box">
             <div className="faq-box-image w-full">
               <img
                 src={faqImageOne}
@@ -36,7 +35,7 @@ const FrequentlyAsked = () => {
               </div>
             </div>
           </div>
-          <div className="faq-box gap-4">
+          <div className="faq-box">
             <div className="faq-box-content w-full">
               <div className="faq-box-image w-full">
                 <img
@@ -62,7 +61,7 @@ const FrequentlyAsked = () => {
               </div>
             </div>
           </div>
-          <div className="faq-box gap-4">
+          <div className="faq-box">
             <div className="faq-box-image">
               <img
                 src={faqImageThree}
@@ -89,8 +88,9 @@ const FrequentlyAsked = () => {
             </div>
           </div>
         </div>
-      </section>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default FrequentlyAsked
+export default FrequentlyAsked;

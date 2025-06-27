@@ -72,24 +72,24 @@ const Showcase = () => {
     <section id="showcase">
       <Slider {...settings}>
         {slides.map((slide, i) => (
-          <div key={i} className="w-full h-screen flex z-[2]">
+          <div key={i} className="w-full h-screen flex gap-4 z-[2]">
             {/* Left Content */}
             <div
-              className="w-full bg-black flex items-center justify-start text-white p-10"
+              className="w-full bg-black flex items-center justify-start text-white md:p-10"
               style={{
                 background: "url('/Images/texture.png'), #818062",
                 backgroundBlendMode: "multiply",
                 backgroundSize: "contain",
-                height: "100vh",
+                height: "calc(100vh + 6rem)",
               }}
             >
               <div className="container flex-col justify-center">
                 <h6 className="text-white text-sm uppercase mb-3">
                   Premier Clay Shooting Experience
                 </h6>
-                <h1 className="text-4xl md:text-[2.7rem] font-extrabold leading-tight mb-4">
-                  {slide.title} <br />
-                  <span className="text-[#D56602]">{slide.highlight}</span>
+                <h1 className="text-4xl md:text-[2.7rem] max-w-md font-extrabold leading-tight mb-4">
+                  {slide.title}
+                  <span className="text-[#D56602] ml-3">{slide.highlight}</span>
                 </h1>
                 <p className="text-sm md:text-base max-w-md mb-6">
                   {slide.description}
@@ -109,7 +109,7 @@ const Showcase = () => {
 
             {/* Right Image */}
             <div
-              className="absolute top-0 w-[50%] left-[50%] z-[1] h-full"
+              className="md:block hidden absolute top-0 lg:w-[50%] w-[100%] lg:left-[50%] md:left-[60%] z-[1] h-full"
               style={{
                 backgroundImage: `url(${slide.image})`,
                 backgroundSize: "cover",

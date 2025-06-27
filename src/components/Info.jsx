@@ -5,15 +5,15 @@ const Info = () => {
   return (
     <>
       <section id="about" className="py-20">
-        <div className="container flex items-center">
-          <div className="info_image w-[45%]">
+        <div className="container flex md:flex-row flex-col md:gap-0 gap-10 items-center">
+          <div className="info_image md:w-[45%] w-full">
             <img src={aboutImage} className="max-w-full h-full" alt="" />
-            <div className="flex mt-6 gap-4">
+            <div className="flex lg:flex-row md:flex-col sm:flex-row flex-col mt-6 gap-4">
                 <button className="btn-main text-primary_bg mt-4 translate-y-[10px] w-full p-4">First Time Shooters Start Here</button>
                 <button className="btn-main text-primary_bg mt-4 translate-y-[10px] w-full p-4">Experience Package Reservations</button>
             </div>
           </div>
-          <div className="info_content w-[50%] ps-[5%]">
+          <div className="info_content md:w-[50%] w-full ps-[5%]">
             <div className="info_content_title">
               <h1 className="text-primary_bg text-[2rem]">
                 Learn. Practice. Enjoy.

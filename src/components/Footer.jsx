@@ -99,7 +99,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="lg:mb-0 mb-4">
             <img
               src="Images/Footer/cowboy-calender.gif"
               className="w-full"

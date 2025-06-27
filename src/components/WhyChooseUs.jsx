@@ -36,31 +36,33 @@ const WhyChooseUs = () => {
         backgroundSize: "contain",
       }}
     >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#fff]">
-          A Notch (or three) Above All Others
-        </h2>
-      </div>
-      <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="border-dashed border border-gray-500 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
-            style={{
-              background: "url('/Images/texture.png')",
-              backgroundBlendMode: "multiply",
-              backgroundColor: "#D56602",
-            }}
-          >
-            <div className="mb-4 flex justify-center">{feature.icon}</div>
-            <h3 className="text-lg font-bold text-[#fff] mb-2">
-              {feature.title}
-            </h3>
-            <p className="text-sm text-[#fff] leading-relaxed">
-              {feature.desc}
-            </p>
-          </div>
-        ))}
+      <div className="container flex-col">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#fff]">
+            A Notch (or three) Above All Others
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="border-dashed border border-gray-500 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+              style={{
+                background: "url('/Images/texture.png')",
+                backgroundBlendMode: "multiply",
+                backgroundColor: "#D56602",
+              }}
+            >
+              <div className="mb-4 flex justify-center">{feature.icon}</div>
+              <h3 className="text-lg font-bold text-[#fff] mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-[#fff] leading-relaxed">
+                {feature.desc}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
