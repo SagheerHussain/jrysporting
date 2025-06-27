@@ -65,7 +65,7 @@ function Lodging() {
       <h2 className="text-4xl font-extrabold text-center text-[#D56602] mb-14">
         Lodging close to Coyote Valley
       </h2>
-      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {hotels.map((hotel, idx) => (
           <div
             key={idx}

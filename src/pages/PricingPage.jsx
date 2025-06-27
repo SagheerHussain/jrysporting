@@ -9,7 +9,7 @@ import AmmuPricing from '../components/AmmuPricing'
 const PricingPage = () => {
   return (
     <>
-      <Header title="Pricing Package" banner={pricingBanner} />
+      <Header title="Pricing" banner={pricingBanner} />
       <Pricing />
       <AmmuPricing />
       <Reviews />

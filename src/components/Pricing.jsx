@@ -58,7 +58,7 @@ const Pricing = () => {
         <h2 className="text-4xl text-[#D56602] mb-12 text-center">Pricing</h2>
         <h4 className="text-2xl text-[#D56602] mb-10 after:block after:translate-y-2 after:bg-[#D56602] after:w-full after:h-[1px] after:content-['']">Clay Targets</h4>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl w-full">
           {plans.map(({ name, price, priceColor, features }) => {
             const colorClasses = colorClassMap[priceColor];
             return (

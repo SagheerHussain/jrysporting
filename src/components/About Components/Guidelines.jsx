@@ -64,23 +64,28 @@ const Guidelines = () => {
             including:
           </p>
 
-          <div className="mt-10 flex justify-center gap-4 flex-wrap">
-            {["Private Party", "Another Dealer", "CVSC Transfer", "Shipping"].map(
-              (label, idx) => (
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-4 flex-wrap">
+            {[
+              "Private Party",
+              "Another Dealer",
+              "CVSC Transfer",
+              "Shipping",
+            ].map((label, idx) => (
+              <div className="w-full">
                 <button
                   key={label}
                   onClick={() => handleScrollToCard(idx)}
-                  className="bg-[#D56602] hover:bg-[#D56602]/80 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-200"
+                  className="w-full bg-[#D56602] hover:bg-[#D56602]/80 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-200"
                 >
                   {label}
                 </button>
-              )
-            )}
+              </div>
+            ))}
           </div>
         </div>
 
         <div className="relative w-full max-w-5xl">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#818062] z-0"></div>
+          <div className="md:block hidden absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#818062] z-0"></div>
 
           {timelineData.map((item, index) => {
             const isLeft = index % 2 === 0;
@@ -92,8 +97,8 @@ const Guidelines = () => {
               >
                 {isLeft ? (
                   <>
-                    <div className="w-[48%] relative">
-                      <div className="absolute right-[-1.8rem] top-2 w-4 h-4 bg-[#9c5043] rounded-full z-20"></div>
+                    <div className="md:w-[48%] relative">
+                      <div className="absolute md:right-[-1.4rem] lg:right-[-1.7rem] top-2 w-4 h-4 bg-[#9c5043] rounded-full z-20"></div>
                       <div
                         className="text-white p-6 rounded-lg shadow-lg"
                         style={{
@@ -107,13 +112,13 @@ const Guidelines = () => {
                         <p className="text-sm mt-1 text-white">{item.text}</p>
                       </div>
                     </div>
-                    <div className="w-[48%]"></div>
+                    <div className="md:w-[48%]"></div>
                   </>
                 ) : (
                   <>
-                    <div className="w-[48%]"></div>
-                    <div className="w-[48%] relative">
-                      <div className="absolute left-[-1.8rem] top-2 w-4 h-4 bg-[#9c5043] rounded-full z-20"></div>
+                    <div className="md:w-[48%]"></div>
+                    <div className="md:w-[48%] relative">
+                      <div className="md:block hidden absolute md:left-[-1.4rem] lg:left-[-1.7rem] top-2 w-4 h-4 bg-[#9c5043] rounded-full z-20"></div>
                       <div
                         className="text-white p-6 rounded-lg shadow-lg"
                         style={{

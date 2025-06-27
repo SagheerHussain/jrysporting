@@ -7,7 +7,7 @@ import eventsBanner from '/Images/Events/banner.webp'
 const EventsPage = () => {
   return (
     <>
-      <Header title="Events & Venues" banner={eventsBanner} />
+      <Header title="Events Venues" banner={eventsBanner} />
       <Events />
       <Footer />
     </>

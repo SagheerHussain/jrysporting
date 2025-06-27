@@ -136,7 +136,7 @@ function RangeRules() {
         {rulesData.map(({ section, points }) => (
           <div key={section} className="mb-12">
             <h2 className="text-xl mb-6 text-[#D56602]">{section}</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {points.map(({ title, description }, idx) => (
                 <div
                   key={idx}

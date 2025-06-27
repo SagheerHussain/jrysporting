@@ -12,7 +12,7 @@ const ExperiencePackage = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Card 1 */}
             <div
               className="bg-white rounded-lg shadow-lg border-t-[6px] border-[#9c5043] p-8 flex flex-col items-center text-center"

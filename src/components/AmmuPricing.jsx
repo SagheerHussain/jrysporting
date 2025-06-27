@@ -111,7 +111,7 @@ const AmmuPricing = () => {
           <h2 className="text-[#D56602] text-lg mb-6 border-b border-[#D56602] pb-1">
             Ammunition &nbsp;•&nbsp; NSI, Fiocchi and Winchester AA Shotshells
           </h2>
-          <div className="flex justify-center mb-20">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 mb-10">
             {ammunitionCards.map((card, idx) => (
               <Card
                 key={idx}
@@ -125,7 +125,7 @@ const AmmuPricing = () => {
           <h2 className="text-[#D56602] text-lg mb-6 border-b border-[#D56602] pb-1">
             Equipment Rentals
           </h2>
-          <div className="flex justify-center">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4">
             {equipmentRentalsCards.map((card, idx) => (
               <Card
                 key={idx}

@@ -10,7 +10,6 @@ const ProShopPage = () => {
     <>
       <Header title="ProShop" banner={proshopBanner} />
       <Proshop />
-      
       <Reviews />
       <Footer />
     </>
